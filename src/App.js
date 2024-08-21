@@ -1,5 +1,6 @@
 import './App.css';
 import barberPole from './images/barbpole.gif'
+import dogLogo from './images/bfaveic.png'
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </div>
       <div className="window-content centered-content">
       <button className="button">Book Appointment</button>
+      </div>\
+      <div className="window-content centered-content">
+      <img src={dogLogo} alt="Right Icon" className="side-image" />
       </div>
     </div>
   );
