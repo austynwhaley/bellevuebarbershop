@@ -1,0 +1,76 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #9a9988;
+    color: black;
+  }
+  
+  .window {
+    border: 2px solid black;
+    background-color: rgb(243, 242, 241);
+    padding: 100px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+  }
+  
+  .window-content {
+    margin-top: 20px;
+  }
+  
+  .flipped-horizontal {
+    transform: scaleX(-1);
+  }
+  
+  .centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .shopHeader {
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+  }
+  
+  .side-image {
+    width: 90px;
+    height: 100px;
+  }
+  
+  .button {
+    background-color: #c3c7c9;
+    border: 2px solid #808080;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #b0b0b0;
+  }
+
+  .nav-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent element, so it matches the surrounding text */
+  }
+  
+  .nav-link:visited {
+    color: inherit; /* Ensures the color remains the same for visited links */
+  }
+  
+  .nav-link:hover {
+    color: inherit; /* Ensures the color remains the same on hover */
+  }
+  
+  .nav-link:active {
+    color: inherit; /* Ensures the color remains the same when the link is clicked */
+  }
+  
+
+  
+  
+  
+  
+  

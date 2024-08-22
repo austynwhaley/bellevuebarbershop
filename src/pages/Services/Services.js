@@ -1,4 +1,4 @@
-import '../Services/Services.css';
+import './Services.css';
 import cutImg from '../../images/haircut.png'
 import dogLogo from '../../images/bfaveic.png'
 import pixCut from '../../images/pixcut.png'

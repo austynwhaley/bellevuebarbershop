@@ -1,14 +1,15 @@
-import '../Home/Home.css';
-import barberPole from '../../images/barbpole.gif'
+import './Home.css';
+import barberPole from '../../images/barbpole.gif';
 import cityBeat from '../../images/citybeat.png';
-import Services from '../Services/Services'
+import Services from '../Services/Services';
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Home() {
   return (
     <div className="window">
-        <div className="window-content centered-content">
-          <img src={cityBeat} alt="city beat" className="flashing-image overlapping-image" />
-        </div>
+      <div className="window-content centered-content">
+        <img src={cityBeat} alt="city beat" className="flashing-image overlapping-image" />
+      </div>
       <div className="centered-content">
         <img src={barberPole} alt="Left Icon" className="side-image flipped-horizontal" />
         <h1 className='shopHeader'>Bellevue Barbershop!!</h1>
@@ -18,10 +19,12 @@ function Home() {
         <p>Shorter hair or money back guaranteed!</p>
       </div>
       <div className="window-content centered-content">
-      <button className="button">Book Appointment</button>
+        <button className="button">
+          <Link className="nav-link" to="/booking">
+            Book Appointment
+          </Link></button>
       </div>
-
-      <Services/>
+      <Services />
     </div>
   );
 }
