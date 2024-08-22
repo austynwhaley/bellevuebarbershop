@@ -1,88 +1,190 @@
 body {
     font-family: 'DotGothic16', sans-serif;
     background-color: #9a9988;
-  }
-  
-  .container {
+}
+
+.container {
     background-color: rgb(243, 242, 241);
     padding: 50px 20px;
-  }
-  
-  .centered-content {
+}
+
+.centered-content {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-  
-  .serviceHeader {
+}
+
+.serviceHeader {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px;
+    display: inline-block;body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #9a9988;
+}
+
+.container {
+    background-color: rgb(243, 242, 241);
+    padding: 50px 20px;
+}
+
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.serviceHeader {
     text-align: center;
     margin-bottom: 40px;
     padding: 10px;
     display: inline-block;
-  }
-  
-  .services-columns {
+}
+
+.services-section {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  }
-  
-  .column {
-    flex: 1;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #f4f4f4;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    width: 100%;
+}
+
+.text-content {
+    margin-left: 20px;
+}
+
+.cut-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.service-item:nth-of-type(odd) .cut-image {
+    align-self: flex-start; /* Align image to the left for odd items */
+}
+
+.service-item:nth-of-type(even) .cut-image {
+    align-self: flex-end; /* Align image to the right for even items */
+}
+
+.service-item:nth-of-type(odd) .text-content {
+    text-align: left;
+}
+
+.service-item:nth-of-type(even) .text-content {
+    text-align: right;
+}
+
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     border: 2px solid black;
     background-color: #f4f4f4;
     text-align: center;
     transition: all 0.3s ease-in-out;
     position: relative;
-    min-width: 250px; /* Ensures a decent size on smaller screens */
-  }
-  
-  .column:hover {
-    background-color: #e0e0e0;
-    border-color: #9c9a94;
-    box-shadow: 0px 0px 0px 4px #3e3e3e, /* Outer border */
-                4px 4px 0px 0px black;   /* Shadow for pixel effect */
-    transform: translate(-4px, -4px);    /* Slight move to simulate retro game hover */
-  }
-  
-  .column h2, .column p {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .column:hover h2, .column:hover p {
-    transform: translateY(-4px); /* Slight text shift to add to the effect */
-  }
-  
-  @media (max-width: 768px) {
-    .services-columns {
-      justify-content: center; /* Centers the columns on smaller screens */
-    }
-  
-    .column {
-      min-width: 100%; /* Columns will take up full width on mobile */
-    }
-  }
-  
-  
-  .doggie{
+    width: 100%;
+}
+
+
+.doggie {
     border: 2px solid black;
-  }
-  
-  .cut-image {
+}
+
+.cut-image {
     width: 150px;
     height: 150px;
     border-radius: 15px;
     margin-top: 20px;
-  }
-  
-  @media (max-width: 768px) {
+    align-self: center;
+}
+
+@media (max-width: 768px) {
     .services-columns {
-      flex-direction: column;
-      gap: 10px;
+        flex-direction: column;
+        gap: 10px;
     }
-  }
-  
+
+    .column {
+        min-width: 100%; /* Columns will take up full width on mobile */
+    }
+}
+
+.service-item:nth-of-type(odd) .cut-image {
+    align-self: flex-start; /* Align image to the left for odd items */
+}
+
+.service-item:nth-of-type(even) .cut-image {
+    align-self: flex-end; /* Align image to the right for even items */
+}
+
+@keyframes flashColors {
+    0% { color: rgb(128, 128, 0); }
+    25% { color: red; }
+    50% { color: black; }
+    75% { color: red; }
+    100% { color: yellow; }
+}
+
+.flash {
+    animation: flashColors 1s infinite;
+}
+
+.disclaim{
+    background-color: rgb(89, 84, 84);
+    color: white;
+    width: auto;
+}

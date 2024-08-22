@@ -1,7 +1,7 @@
 import './Home.css';
 import barberPole from '../../images/barbpole.gif';
 import cityBeat from '../../images/citybeat.png';
-import Services from '../Services/Services';
+import ServicesSect from '../../components/ServicesSect/ServicesSect';
 import { HashLink as Link } from 'react-router-hash-link'
 
 function Home() {
@@ -24,7 +24,7 @@ function Home() {
             Book Appointment
           </Link></button>
       </div>
-      <Services />
+      <ServicesSect />
     </div>
   );
 }
