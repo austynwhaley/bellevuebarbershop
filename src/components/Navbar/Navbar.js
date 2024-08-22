@@ -1,4 +1,5 @@
 import './Navbar.css';
+import { HashLink as Link } from 'react-router-hash-link'
 
 function NavBar() {
   return (
@@ -15,10 +16,26 @@ function NavBar() {
       </div>
 
       <div className="gray-bar">
-        <span>Home</span>
-        <span>Services</span>
-        <span>About</span>
-        <span>Contact</span>
+        <span>
+          <Link className="nav-link" to="/">
+            Home
+          </Link>
+        </span>
+        <span>
+          <Link className="nav-link" to="/services">
+            Services
+          </Link>
+        </span>
+        <span>
+          <Link className="nav-link" to="/about">
+            About
+          </Link>
+        </span>
+        <span>
+          <Link className="nav-link" to="/contact">
+            Contact
+          </Link>
+        </span>
       </div>
     </div>
   );
