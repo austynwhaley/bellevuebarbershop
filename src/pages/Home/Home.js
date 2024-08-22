@@ -12,7 +12,7 @@ function Home() {
       </div>
       <div className="centered-content">
         <img src={barberPole} alt="Left Icon" className="side-image flipped-horizontal" />
-        <h1 className='shopHeader'>Bellevue Barbershop!!</h1>
+        <h1 className='shopHeader'>Bellevue Barbershop</h1>
         <img src={barberPole} alt="Right Icon" className="side-image" />
       </div>
       <div className="window-content centered-content">
