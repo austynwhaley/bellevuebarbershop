@@ -1,0 +1,109 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #9a9988;
+    color: black;
+  }
+  
+  .window {
+    border: 2px solid black;
+    background-color: rgb(243, 242, 241);
+    padding: 100px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+  }
+  
+  .window-content {
+    margin-top: 20px;
+  }
+  
+  .flipped-horizontal {
+    transform: scaleX(-1);
+  }
+  
+  .centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .shopHeader {
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+  }
+  
+  .side-image {
+    width: 90px;
+    height: 100px;
+  }
+  
+  .button {
+    background-color: #c3c7c9;
+    border: 2px solid #808080;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #b0b0b0;
+  }
+  
+  .overlapping-image {
+    position: absolute;
+    top: -80px;
+    right: -70px;
+    width: 150px;
+    height: auto;
+    z-index: 10;  /* Ensures the image is above other content */
+  }
+  
+  .flashing-image {
+    animation: flash 2.5s infinite;
+    transform: rotate(-15deg);
+  }
+  
+  @keyframes flash {
+    0%, 70% { opacity: 1; }
+    71%, 100% { opacity: 0; }
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Ensures wrapping on small screens without going to a vertical stack */
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #c3c7c9;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text from breaking */
+    flex-shrink: 0; /* Prevents links from shrinking too much on smaller screens */
+  }
+  
+  .link:hover {
+    background-color: #b0b0b0;
+  }
+  
+  @media (max-width: 768px) {
+    .link-container {
+      gap: 5px; /* Reduces the gap between links on smaller screens */
+    }
+  
+    .link {
+      font-size: 14px; /* Makes the text slightly smaller for better fit */
+    }
+  }
+  
+  
+  
+  

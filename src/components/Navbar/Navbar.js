@@ -9,7 +9,7 @@ function NavBar() {
         </div>
         <div className="navbar-buttons">
           <button className="nav-button">_</button>
-          <button className="nav-button">[ ]</button>
+          <button className="nav-button">🗖</button>
           <button className="nav-button">x</button>
         </div>
       </div>
@@ -17,8 +17,8 @@ function NavBar() {
       <div className="gray-bar">
         <span>Home</span>
         <span>Services</span>
+        <span>About</span>
         <span>Contact</span>
-        <span>Help</span>
       </div>
     </div>
   );
