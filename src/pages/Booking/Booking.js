@@ -8,7 +8,7 @@ function Home() {
       </div>
 
       <div className="window-content centered-content">
-        <p>* Resurva Page *</p>
+      <iframe src="https://bellevuebarbershop.resurva.com/book?embedded=true" name="resurva-frame" frameborder="0" width="450" height="450" style={{maxWidth:"100%"}}></iframe>
       </div>
     </div>
   );
