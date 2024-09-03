@@ -1,6 +1,6 @@
 import './Booking.css';
 
-function Home() {
+function Booking() {
   return (
     <div className="window">
       <div className="centered-content">
@@ -14,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Booking;
