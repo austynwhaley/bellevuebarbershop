@@ -1,76 +1,156 @@
+/* Main CSS file */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 body {
-    font-family: 'DotGothic16', sans-serif;
-    background-color: #9a9988;
-    color: black;
-  }
-  
+  font-family: 'DotGothic16', sans-serif;
+  background-color: #9a9988;
+  color: black;
+}
+
+.window {
+  border: 2px solid black;
+  background-color: rgb(243, 242, 241);
+  padding: 100px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.window-content {
+  margin-top: 20px;
+}
+
+.flipped-horizontal {
+  transform: scaleX(-1);
+}
+
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.shopHeader {
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.side-image {
+  width: 90px;
+  height: 100px;
+}
+
+.button {
+  background-color: #c3c7c9;
+  border: 2px solid #808080;
+  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #b0b0b0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:visited {
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: inherit;
+}
+
+.nav-link:active {
+  color: inherit;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.person-card {
+  text-align: center;
+  background-color: #f0f0e8;
+  border: 2px solid black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.person-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-bottom: 15px;
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
   .window {
-    border: 2px solid black;
-    background-color: rgb(243, 242, 241);
-    padding: 100px;
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+    padding: 20px;
   }
-  
-  .window-content {
-    margin-top: 20px;
+
+  .people-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+    gap: 30px;
   }
-  
-  .flipped-horizontal {
-    transform: scaleX(-1);
-  }
-  
-  .centered-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .shopHeader {
-    text-align: center;
-    margin: 0 10px;
-    padding: 10px;
-    border: 2px solid black;
-    display: inline-block;
-  }
-  
-  .side-image {
-    width: 90px;
+
+  .person-image {
+    width: 100px; /* Adjust size for mobile */
     height: 100px;
   }
-  
-  .button {
-    background-color: #c3c7c9;
-    border: 2px solid #808080;
-    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #b0b0b0;
+
+  .shopHeader {
+    font-size: 1.5em; /* Adjust font size for mobile */
+    margin: 10px;
   }
 
-  .nav-link {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits color from parent element, so it matches the surrounding text */
+  .carousel-slide {
+    height: 150px; /* Adjust height for mobile */
   }
-  
-  .nav-link:visited {
-    color: inherit; /* Ensures the color remains the same for visited links */
-  }
-  
-  .nav-link:hover {
-    color: inherit; /* Ensures the color remains the same on hover */
-  }
-  
-  .nav-link:active {
-    color: inherit; /* Ensures the color remains the same when the link is clicked */
-  }
-  
-
-  
-  
-  
-  
-  
+}
