@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bellevuebarbershop/static/css/main.e8f55281.css",
-    "main.js": "/bellevuebarbershop/static/js/main.27adfca4.js",
+    "main.css": "/bellevuebarbershop/static/css/main.730e7902.css",
+    "main.js": "/bellevuebarbershop/static/js/main.3b3dc0d9.js",
     "static/media/pixcut.png": "/bellevuebarbershop/static/media/pixcut.2b8e77b80f9eb358e0d6.png",
     "static/media/haircut.png": "/bellevuebarbershop/static/media/haircut.6701d3f1d752cdb44e5b.png",
     "static/media/storefront.jpg": "/bellevuebarbershop/static/media/storefront.c58125b06c45c9bc0412.jpg",
@@ -13,11 +13,11 @@
     "static/media/slick.ttf": "/bellevuebarbershop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/bellevuebarbershop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bellevuebarbershop/index.html",
-    "main.e8f55281.css.map": "/bellevuebarbershop/static/css/main.e8f55281.css.map",
-    "main.27adfca4.js.map": "/bellevuebarbershop/static/js/main.27adfca4.js.map"
+    "main.730e7902.css.map": "/bellevuebarbershop/static/css/main.730e7902.css.map",
+    "main.3b3dc0d9.js.map": "/bellevuebarbershop/static/js/main.3b3dc0d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8f55281.css",
-    "static/js/main.27adfca4.js"
+    "static/css/main.730e7902.css",
+    "static/js/main.3b3dc0d9.js"
   ]
 }
