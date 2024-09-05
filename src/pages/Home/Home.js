@@ -2,7 +2,6 @@ import './Home.css';
 import barberPole from '../../images/barbpole.gif';
 import cityBeat from '../../images/citybeat.png';
 import ServicesSect from '../../components/ServicesSect/ServicesSect';
-import { HashLink as Link } from 'react-router-hash-link'
 
 function Home() {
   return (
@@ -20,9 +19,9 @@ function Home() {
       </div>
       <div className="window-content centered-content">
         <button className="button">
-          <Link className="nav-link" to="/booking">
+          <a className="nav-link" href="https://bellevuebarbershop.resurva.com/book">
             Book Appointment
-          </Link></button>
+          </a></button>
       </div>
       <ServicesSect />
     </div>
