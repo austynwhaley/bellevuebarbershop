@@ -6,6 +6,9 @@ body {
   font-family: 'DotGothic16', sans-serif;
   background-color: #9a9988;
   color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .window {
@@ -13,10 +16,14 @@ body {
   background-color: rgb(243, 242, 241);
   padding: 100px;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+  min-height: 100vh; /* Ensure window fills the screen */
+  display: flex;
+  flex-direction: column;
 }
 
 .window-content {
   margin-top: 20px;
+  flex-grow: 1; /* Allow content to grow and fill available space */
 }
 
 .flipped-horizontal {
@@ -70,7 +77,17 @@ body {
   color: inherit;
 }
 
-.people-grid {
+.group-photo {
+  width: 500px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.barbers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -96,7 +113,21 @@ body {
   height: 200px;
 }
 
+.about-carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
 .carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-carousel-image {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -133,15 +164,20 @@ body {
 @media (max-width: 768px) {
   .window {
     padding: 20px;
+    min-height: 100vh; /* Ensure the window still fills the screen on mobile */
   }
 
-  .people-grid {
+  .barbers-grid {
     grid-template-columns: 1fr; /* Stack cards vertically on mobile */
-    gap: 30px;
+    gap: 20px;
+  }
+
+  .person-card {
+    padding: 20px;
   }
 
   .person-image {
-    width: 100px; /* Adjust size for mobile */
+    width: 100px;
     height: 100px;
   }
 
@@ -152,5 +188,37 @@ body {
 
   .carousel-slide {
     height: 150px; /* Adjust height for mobile */
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .group-photo {
+    width: 100%; /* Make the group photo responsive on mobile */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .slick-prev, .slick-next {
+    color: black; /* Change the arrow color to dark (black) */
+    font-size: 30px; /* Adjust size if needed */
+    z-index: 1; /* Ensure arrows appear above other elements */
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: darkgray; /* Change color on hover for better visibility */
+  }
+  
+  /* Optional: Positioning the arrows */
+  .slick-prev {
+    left: 10px; /* Adjust positioning for the previous arrow */
+  }
+  
+  .slick-next {
+    right: 10px; /* Adjust positioning for the next arrow */
   }
 }

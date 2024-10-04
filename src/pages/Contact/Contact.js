@@ -1,5 +1,5 @@
 import styles from './Contact.module.css';
-import storeFront from '../../images/storefront.jpg'
+import storeFront from '../../images/photos/storefront.jpg'
 
 function Contact() {
   return (

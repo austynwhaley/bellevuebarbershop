@@ -1,6 +1,7 @@
 import './Home.css';
-import barberPole from '../../images/barbpole.gif';
-import cityBeat from '../../images/citybeat.png';
+import barberPole from '../../images/icons/barbpole.gif';
+import cityBeat from '../../images/icons/citybeat.png';
+import bookIcon from '../../images/icons/book.png';
 import ServicesSect from '../../components/ServicesSect/ServicesSect';
 
 function Home() {
@@ -17,11 +18,13 @@ function Home() {
       <div className="window-content centered-content">
         <p>Shorter hair or money back guaranteed!</p>
       </div>
-      <div className="window-content centered-content">
+      <div className="window-content centered-content button-section">
         <button className="button">
-          <a className="nav-link" href="https://bellevuebarbershop.resurva.com/book">
+          <a className="book-link" href="https://bellevuebarbershop.resurva.com/book">
             Book Appointment
-          </a></button>
+          </a>
+          <img src={bookIcon} alt="Book Icon" className="bookIcon" />
+        </button>
       </div>
       <ServicesSect />
     </div>

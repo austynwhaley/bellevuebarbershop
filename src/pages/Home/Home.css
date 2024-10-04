@@ -51,54 +51,51 @@ body {
 
 @media (min-width: 768px) {
   .overlapping-image {
-    top: -80px;   /* Adjust this to a position you like for larger screens */
-    right: 20px;  /* Pull the image inwards from the edge */
+    top: -80px;
+    right: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .overlapping-image {
-    top: -100px;   /* Adjust for even larger screens if needed */
-    right: 570px;  /* Further adjust to prevent the image from sitting on the edge */
+    top: -100px;
+    right: 570px;
   }
 }
-
 
 @keyframes flash {
   0%, 70% { opacity: 1; }
   71%, 100% { opacity: 0; }
 }
 
-.link-container {
+/* Styling the button */
+.button {
+  padding: 30px 60px; /* Increase padding for a larger button */
+  background-color: #333;
+  color: #000000;
+  border: none;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  border: 2px solid black;
-  background-color: #c3c7c9;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  white-space: nowrap; 
-  flex-shrink: 0; 
+  transition: background-color 0.3s ease;
 }
 
-.link:hover {
-  background-color: #b0b0b0;
+.button a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
 }
 
-@media (max-width: 768px) {
-  .link-container {
-    gap: 5px; 
-  }
+.button img.bookIcon {
+  width: 50px;
+  height: auto;
+}
 
-  .link {
-    font-size: 14px; 
-  }
+.book-link{
+  margin-left: 2%;
+}
+
+.button:hover {
+  background-color: #555;
 }
