@@ -1,23 +1,36 @@
 {
   "files": {
-    "main.css": "/bellevuebarbershop/static/css/main.730e7902.css",
-    "main.js": "/bellevuebarbershop/static/js/main.3b3dc0d9.js",
+    "main.css": "/bellevuebarbershop/static/css/main.aa7b9cf7.css",
+    "main.js": "/bellevuebarbershop/static/js/main.92288011.js",
+    "static/media/Bellevue Barbershop - Phil Armstrong -60.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -60.3b9c1a643d8cb35c6f41.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -44.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -44.a3324938e7cc817cfbc3.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -49.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -49.8f3b5faa9060a516854f.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -104.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -104.2d547ad32ba58d5b7a8f.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -72.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -72.2c52d23fd3304546a5d9.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -69.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -69.3186b60228ec73c3baf2.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -58.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -58.8a71c53c4b49ecfa3870.jpg",
+    "static/media/Bellevue Barbershop - Phil Armstrong -65.jpg": "/bellevuebarbershop/static/media/Bellevue Barbershop - Phil Armstrong -65.bac9fd966737af0800ef.jpg",
+    "static/media/travis-headshot.jpg": "/bellevuebarbershop/static/media/travis-headshot.c9259f1deceaf83e4090.jpg",
+    "static/media/alex-headshot.jpg": "/bellevuebarbershop/static/media/alex-headshot.0362ff4d09ed9304c410.jpg",
+    "static/media/sam-headshot.jpg": "/bellevuebarbershop/static/media/sam-headshot.eec57850260e8f190082.jpg",
+    "static/media/mike-headshot.jpg": "/bellevuebarbershop/static/media/mike-headshot.5974961d8e640772a1f5.jpg",
+    "static/media/reese-headshot.jpg": "/bellevuebarbershop/static/media/reese-headshot.89d82b497f416894c933.jpg",
+    "static/media/bc-headshot.jpg": "/bellevuebarbershop/static/media/bc-headshot.3ccf41dcb8b9e5fda657.jpg",
     "static/media/pixcut.png": "/bellevuebarbershop/static/media/pixcut.2b8e77b80f9eb358e0d6.png",
     "static/media/haircut.png": "/bellevuebarbershop/static/media/haircut.6701d3f1d752cdb44e5b.png",
     "static/media/storefront.jpg": "/bellevuebarbershop/static/media/storefront.c58125b06c45c9bc0412.jpg",
     "static/media/citybeat.png": "/bellevuebarbershop/static/media/citybeat.9f9ae8245107e5dd37f9.png",
-    "static/media/bfaveic.png": "/bellevuebarbershop/static/media/bfaveic.42d417302230be70f231.png",
     "static/media/barbpole.gif": "/bellevuebarbershop/static/media/barbpole.29c52a3ea3668c090339.gif",
     "static/media/slick.svg": "/bellevuebarbershop/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/bellevuebarbershop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/bellevuebarbershop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/bellevuebarbershop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bellevuebarbershop/index.html",
-    "main.730e7902.css.map": "/bellevuebarbershop/static/css/main.730e7902.css.map",
-    "main.3b3dc0d9.js.map": "/bellevuebarbershop/static/js/main.3b3dc0d9.js.map"
+    "main.aa7b9cf7.css.map": "/bellevuebarbershop/static/css/main.aa7b9cf7.css.map",
+    "main.92288011.js.map": "/bellevuebarbershop/static/js/main.92288011.js.map"
   },
   "entrypoints": [
-    "static/css/main.730e7902.css",
-    "static/js/main.3b3dc0d9.js"
+    "static/css/main.aa7b9cf7.css",
+    "static/js/main.92288011.js"
   ]
 }
