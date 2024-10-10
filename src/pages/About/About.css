@@ -78,13 +78,7 @@ body {
 }
 
 .group-photo {
-  width: 500px;
   border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
 }
 
 .barbers-grid {
@@ -106,6 +100,11 @@ body {
   position: relative;
 }
 
+.person-card:hover {
+  transform: translateY(-10px); /* Elevate card on hover */
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9); /* Darken shadow */
+}
+
 .carousel-slide {
   display: flex;
   justify-content: center;
@@ -114,10 +113,10 @@ body {
 }
 
 .about-carousel-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: 100%; /* Make sure the image fills the height of the container */
+  object-fit: cover; /* Ensure the image covers the entire area without being distorted */
+  border-radius: 10px;
 }
 
 .carousel-image {
@@ -135,11 +134,12 @@ body {
 }
 
 .person-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid black;
   margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .instagram-link {
@@ -170,6 +170,8 @@ body {
   .barbers-grid {
     grid-template-columns: 1fr; /* Stack cards vertically on mobile */
     gap: 20px;
+    padding: 20px;
+    padding-bottom: 20px;
   }
 
   .person-card {
@@ -201,6 +203,11 @@ body {
     width: 100%; /* Make the group photo responsive on mobile */
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 2%;
+  }
+
+  .slider{
+    height: 100%;
   }
 
   .slick-prev, .slick-next {

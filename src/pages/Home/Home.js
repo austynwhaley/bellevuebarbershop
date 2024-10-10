@@ -23,9 +23,14 @@ function Home() {
           <a className="book-link" href="https://bellevuebarbershop.resurva.com/book">
             Book Appointment
           </a>
-          <img src={bookIcon} alt="Book Icon" className="bookIcon" />
         </button>
       </div>
+
+      {/* Centering the bookIcon */}
+      <div className="centered-content book-icon-container">
+        <img src={bookIcon} alt="Book Icon" className="bookIcon" />
+      </div>
+
       <ServicesSect />
     </div>
   );

@@ -2,12 +2,15 @@ import './About.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
+
 //carsouel
 import placeHolder from '../../images/placeholder.jpg';
 import stock from '../../images/placeholder-image.jpg';
 import hairCut from '../../images/icons/haircut.png';
+
 //icons
 import instagramIcon from '../../images/icons/instagramlogo.png';
+
 //team photos
 import teamPhoto1 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -44.jpg';
 import teamPhoto2 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -49.jpg';
@@ -16,8 +19,15 @@ import teamPhoto4 from '../../images/photos/Bellevue Barbershop - Phil Armstrong
 import teamPhoto5 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -65.jpg';
 import teamPhoto6 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -69.jpg';
 import teamPhoto7 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -72.jpg';
-import teamPhoto8 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -101.jpg';
-import teamPhoto9 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -104.jpg';
+import teamPhoto8 from '../../images/photos/Bellevue Barbershop - Phil Armstrong -104.jpg';
+
+//headshots
+import mikeHs from '../../images/photos/mike-headshot.jpg'
+import travisHs from '../../images/photos/travis-headshot.jpg'
+import BcHs from '../../images/photos/bc-headshot.jpg'
+import samHs from '../../images/photos/sam-headshot.jpg'
+import reeseHs from '../../images/photos/reese-headshot.jpg'
+import alexHs from '../../images/photos/alex-headshot.jpg'
 
 
 
@@ -40,7 +50,6 @@ const teamPhotos = [
   teamPhoto6,
   teamPhoto7,
   teamPhoto8,
-  teamPhoto9,
 ];
 
 
@@ -48,35 +57,35 @@ const barbers = [
   {
     name: 'Travis',
     description: 'Description for person 1.',
-    imgSrc: placeHolder,
+    imgSrc: travisHs,
     userName: 'dogassmf',
-    carouselImages: [stock, placeHolder, hairCut]
-  },
-  {
-    name: 'Mike',
-    description: 'Description for person 2.',
-    imgSrc: placeHolder,
-    userName: 'bigmikesux',
-    carouselImages: [stock, placeHolder, hairCut]
-  },
-  {
-    name: 'Big Country',
-    description: 'Description for person 3.',
-    imgSrc: placeHolder,
-    userName: 'a_grant187',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Sam',
     description: 'Description for person 4.',
-    imgSrc: placeHolder,
+    imgSrc: samHs,
     userName: 'samuel.tbrown',
+    carouselImages: [stock, placeHolder, hairCut]
+  },
+  {
+    name: 'Mike',
+    description: 'Description for person 2.',
+    imgSrc: mikeHs,
+    userName: 'bigmikesux',
+    carouselImages: [stock, placeHolder, hairCut]
+  },
+  {
+    name: 'Andrew',
+    description: 'Description for person 3.',
+    imgSrc: BcHs,
+    userName: 'a_grant187',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Reese',
     description: 'Description for person 5.',
-    imgSrc: placeHolder,
+    imgSrc: reeseHs,
     instagram: 'https://instagram.com/person5',
     userName: 'reesepaler',
     carouselImages: [stock, placeHolder, hairCut]
@@ -84,7 +93,7 @@ const barbers = [
   {
     name: 'Alex',
     description: 'Description for person 6.',
-    imgSrc: placeHolder,
+    imgSrc: alexHs,
     userName: 'alexthebarber86_',
     carouselImages: [stock, placeHolder, hairCut]
   }
@@ -102,7 +111,7 @@ function About() {
       </div>
 
       <div className='group-photo'>
-        <Slider {...carouselSettings}>
+        <Slider className="slider" {...carouselSettings}>
           {teamPhotos.map((image, i) => (
             <div key={i} className="about-carousel-slide">
               <img src={image} alt={`Slide ${i}`} className="about-carousel-image" />
@@ -114,8 +123,8 @@ function About() {
       <div className="barbers-grid">
         {barbers.map((person, index) => (
           <div key={index} className="person-card">
-            <img src={person.imgSrc} alt={person.name} className="person-image" />
             <h2>{person.name}</h2>
+            <img src={person.imgSrc} alt={person.name} className="person-image" />
             <p>{person.description}</p>
             <a href={`https://instagram.com/${person.userName}`} target="_blank" rel="noopener noreferrer" className="instagram-link">
               <img src={instagramIcon} alt="Instagram" className="instagram-icon" />

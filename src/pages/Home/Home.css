@@ -87,7 +87,14 @@ body {
   display: inline-block;
 }
 
-.button img.bookIcon {
+.book-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add some space between button and icon */
+}
+
+.bookIcon {
   width: 50px;
   height: auto;
 }
