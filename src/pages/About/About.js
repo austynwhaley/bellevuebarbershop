@@ -56,43 +56,42 @@ const teamPhotos = [
 const barbers = [
   {
     name: 'Travis',
-    description: 'Description for person 1.',
+    description: 'Owner - Kentucky & Ohio Master Barber. Reigning from Norwood, Ohio. Father of 2; Frankie and Ozzy. Husband of a beautiful lady, Chelsea. We have 2 dogs. A pug named Francisco and a wiener dog named Boogie. I call them my little grill out! Cincinnati Bengals season ticket holder and enjoys them win or lose. WHO DEY. When I’m not in the shop I’m cutting hair on country musician Zach Bryan’s tour. I have a lot of recommendations when it comes trying new places to eat. Traveled to every state besides Alaska and some different countries as well. Book with Travis soon!',
     imgSrc: travisHs,
-    userName: 'dogassmf',
+    userName: 'bellevuebarbershop',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Sam',
-    description: 'Description for person 4.',
+    description: 'Master Barber. 26 years old reigning from the good ‘ol Blue Grass state and currently resides in our very own beautiful city of Bellevue. Sam enjoys all things Kentucky Wildcats. GO BIG BLUE. Sam books about 1.5 weeks out so book it quick!',
     imgSrc: samHs,
     userName: 'samuel.tbrown',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Mike',
-    description: 'Description for person 2.',
+    description: `Master Barber. Reigning from our very town - Bellevue Alumni. Former woodworker and music tour worker. He's restored antique furniture and traveled the country but now has a burning passion for barbering. Diehard Bengals fan who loves traveling and seeing live music. If you wanna have a good laugh and a great cut, book with "Big Mike" before it's too late!`,
     imgSrc: mikeHs,
     userName: 'bigmikesux',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Andrew',
-    description: 'Description for person 3.',
+    description: 'Master Barber. Andrew AKA Big Country. 6’8 jolly giant reigning from a Cattle Farm in Petersburg, KY. Enjoys being a father to a 3 year old little girl, Harper. Fan of most cars but especially Japanese imports and American Muscle. Harley enthusiast. Texas Longhorn college football fan. Fan of the hometown sports. Listener of any music that has meaning. Former construction worker who’s putting his hands to use for the community. Book with Andrew aka Big Country soon!',
     imgSrc: BcHs,
     userName: 'a_grant187',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Reese',
-    description: 'Description for person 5.',
+    description: 'Master Barber Reese Tanner reigns from the state of Indiana. 29 years young.  Former Army Officer, current hippie van lifer. He enjoys spending most of his time outdoors or playing guitar. Reese was one of the first haircuts done in this building now the tables have turned. Get in tune by booking with Reese soon.',
     imgSrc: reeseHs,
-    instagram: 'https://instagram.com/person5',
     userName: 'reesepaler',
     carouselImages: [stock, placeHolder, hairCut]
   },
   {
     name: 'Alex',
-    description: 'Description for person 6.',
+    description: `KY/OH/GA/NV Master Barber Alex is 34 years old and has been a master barber for 8 years. He loves to travel with his wife Emily and dogs. Enjoys going to bengals games. 90s hip hop is his go to. Always down to play some madden/ncaa on PlayStation. Book with Alex quick before it’s too late! `,
     imgSrc: alexHs,
     userName: 'alexthebarber86_',
     carouselImages: [stock, placeHolder, hairCut]
@@ -124,7 +123,7 @@ function About() {
         {barbers.map((person, index) => (
           <div key={index} className="person-card">
             <h2>{person.name}</h2>
-            <img src={person.imgSrc} alt={person.name} className="person-image" />
+            <div className='imgContainer'><img src={person.imgSrc} alt={person.name} className="person-image" /></div>
             <p>{person.description}</p>
             <a href={`https://instagram.com/${person.userName}`} target="_blank" rel="noopener noreferrer" className="instagram-link">
               <img src={instagramIcon} alt="Instagram" className="instagram-icon" />

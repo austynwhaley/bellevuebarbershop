@@ -17,9 +17,6 @@ function NavBar() {
     case '/contact':
       pageTitle = 'Contact';
       break;
-    case '/booking':
-      pageTitle = 'Booking';
-      break;
     default:
       pageTitle = 'Home';
   }

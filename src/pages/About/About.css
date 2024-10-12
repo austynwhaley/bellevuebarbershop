@@ -89,6 +89,9 @@ body {
 }
 
 .person-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between elements */
   text-align: center;
   background-color: #f0f0e8;
   border: 2px solid black;
@@ -97,12 +100,8 @@ body {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  min-height: 450px; /* Set a minimum height for uniformity */
   position: relative;
-}
-
-.person-card:hover {
-  transform: translateY(-10px); /* Elevate card on hover */
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9); /* Darken shadow */
 }
 
 .carousel-slide {
@@ -145,9 +144,11 @@ body {
 .instagram-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center; /* Center the Instagram link */
   text-decoration: none;
   color: black;
   font-weight: bold;
+  margin-top: 10px; /* Add some space between the image and username */
 }
 
 .instagram-icon {
@@ -174,13 +175,13 @@ body {
     padding-bottom: 20px;
   }
 
-  .person-card {
-    padding: 20px;
-  }
-
   .person-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    object-fit: cover;
   }
 
   .shopHeader {
@@ -216,9 +217,6 @@ body {
     z-index: 1; /* Ensure arrows appear above other elements */
   }
   
-  .slick-prev:hover, .slick-next:hover {
-    color: darkgray; /* Change color on hover for better visibility */
-  }
   
   /* Optional: Positioning the arrows */
   .slick-prev {
